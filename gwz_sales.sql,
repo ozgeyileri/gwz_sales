@@ -1,0 +1,9 @@
+SELECT 
+  date_date,
+  SUM(turnover) AS daily_turnover
+FROM 
+  `fonksiyonlar.fonk.gwz_sales_17_copy`
+GROUP BY 
+  date_date
+ORDER BY 
+  date_date DESC;
